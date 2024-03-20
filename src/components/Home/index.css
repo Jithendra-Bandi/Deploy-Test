@@ -1,0 +1,23 @@
+li {
+    display: flex;
+    justify-content: space-between;
+    margin:20px;
+    border: 1px solid green;
+    padding: 20px;
+}
+button {
+    background-color: green;
+    color: white;
+    border-width: 0px;
+    border-radius: 5px;
+    padding: 8px;
+    margin:20px;
+    cursor: pointer;
+    outline: none;
+}
+span {
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 20px;
+}
