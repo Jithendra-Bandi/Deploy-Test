@@ -11,7 +11,7 @@ class Home extends Component {
     }
 
     getList = async () => {
-        const url = "http://deploy-test.ap-southeast-2.elasticbeanstalk.com/profiles";
+        const url = "http://spring-deploy.ap-southeast-2.elasticbeanstalk.com/profiles";
         const response = await fetch(url);
         const data = await response.json();
         this.setState({list: data});
@@ -19,7 +19,7 @@ class Home extends Component {
 
     checkAuthentication = async () => {
         const token = Cookies.get('jwt_token');
-        const url = "http://deploy-test.ap-southeast-2.elasticbeanstalk.com/check-auth";
+        const url = "http://spring-deploy.ap-southeast-2.elasticbeanstalk.com/check-auth";
         const options = {
             method:'GET',
             headers: {

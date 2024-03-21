@@ -10,7 +10,7 @@ const Registration = props => {
             method:"POST",
             body:formData
         };
-        const response = await fetch('http://deploy-test.ap-southeast-2.elasticbeanstalk.com/registration', options);
+        const response = await fetch('http://spring-deploy.ap-southeast-2.elasticbeanstalk.com/registration', options);
         const data = await response.text();
         if (response.ok) {
             if (data === "This Mobile Number is already registered") {

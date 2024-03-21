@@ -16,7 +16,7 @@ const Login = props => {
             method: 'POST',
             body: formData
         }
-        const url = "http://deploy-test.ap-southeast-2.elasticbeanstalk.com/login";
+        const url = "http://spring-deploy.ap-southeast-2.elasticbeanstalk.com/login";
         const response = await fetch(url, options);
         if (response.ok) {
             const data = await response.text();
